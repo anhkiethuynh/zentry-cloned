@@ -125,6 +125,7 @@ const Hero = () => {
                 className="size-64 object-cover scale-150 object-center"
                 src={getVideoSrc(upcomingVideoIndex)}
                 loop
+                playsInline
                 muted
                 id="current-video"
                 onLoadedData={handleVideoLoaded}
@@ -135,8 +136,9 @@ const Hero = () => {
           <video
             ref={nextVideoRef}
             className="absolute-center invisible absolute z-20 size-64 object-center object-cover"
-            muted
             loop
+            muted
+            playsInline
             id="next-video"
             src={getVideoSrc(currentIndex)}
             onLoadedData={handleVideoLoaded}
@@ -146,6 +148,7 @@ const Hero = () => {
             className="absolute left-0 top-0 size-full object-cover object-center"
             src={getVideoSrc(overlayIndex)}
             loop
+            playsInline
             muted
             autoPlay
             onLoadedData={handleVideoLoaded}

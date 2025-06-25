@@ -77,6 +77,7 @@ const Features = () => {
             <video
               src="videos/feature-5.mp4"
               autoPlay
+              playsInline
               loop
               muted
               className="h-full w-full object-cover object-center"
@@ -151,6 +152,7 @@ const BentoCard = ({
       <video
         src={src}
         autoPlay
+        playsInline
         loop
         muted
         className="h-full w-full object-cover object-center absolute top-0 left-0"

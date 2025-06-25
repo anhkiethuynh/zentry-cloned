@@ -22,7 +22,7 @@
 
 body {
   /* Font ?: General Sans */
-  font-family: var(--font-general);
+  font-family: var(--font-circular-web);
   /* dvw = dynamic viewport width - adjusts based on viewport size including browser UI elements */
   /* width: 100vw; */
   background-color: #dfdff0;
@@ -124,7 +124,7 @@ body {
   }
 
   .story-img-mask {
-    @apply absolute left-0 top-0 size-full overflow-hidden md:left-[20%] md:top-[-10%] md:size-4/5;
+    @apply absolute left-0 top-0 size-full overflow-hidden md:left-[20%] md:top-[-10%] md:size-9/10;
     clip-path: polygon(4% 0, 83% 21%, 100% 73%, 0% 100%);
     /* clip-path: polygon(7% 25%, 79% 31%, 100% 72%, 0 100%); */
   }
