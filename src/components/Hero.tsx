@@ -147,7 +147,7 @@ const Hero = () => {
             src={getVideoSrc(overlayIndex)}
             loop
             muted
-            // autoPlay
+            autoPlay
             onLoadedData={handleVideoLoaded}
           />
         </div>
