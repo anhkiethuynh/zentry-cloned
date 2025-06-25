@@ -5,6 +5,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   containerClass?: string;
   id?: string;
   title?: string;
+  rightIcon?: React.ReactNode;
 }
 
 const Button = ({
@@ -12,6 +13,7 @@ const Button = ({
   containerClass,
   title,
   id,
+  rightIcon,
   ...props
 }: ButtonProps) => {
   return (
@@ -24,6 +26,7 @@ const Button = ({
       <span className="relative inline-flex overflow-hidden font-robert-re text-xs uppercase">
         <div className="flex leading-none">{title}</div>
       </span>
+      {rightIcon && <span className="">{rightIcon}</span>}
     </button>
   );
 };

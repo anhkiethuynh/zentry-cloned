@@ -8,23 +8,23 @@
   --font-zentry: "zentry-regular", sans-serif;
 
   /* Colors */
-    --color-blue-50: #dfdff0;
-    --color-blue-75: #dfdff2;
-    --color-blue-100: #f0f2fa; 
-    --color-blue-200: #010101; 
-    --color-blue-300: #4fb7dd; 
+  --color-blue-50: #dfdff0;
+  --color-blue-75: #dfdff2;
+  --color-blue-100: #f0f2fa;
+  --color-blue-200: #010101;
+  --color-blue-300: #4fb7dd;
 
-    --color-violet-300: #5724ff 
+  --color-violet-300: #5724ff;
 
-    --color-yellow-100: #83983f;
-    --color-yellow-300: #edff66;
+  --color-yellow-100: #83983f;
+  --color-yellow-300: #edff66;
 }
 
 body {
   /* Font ?: General Sans */
   font-family: var(--font-general);
   /* dvw = dynamic viewport width - adjusts based on viewport size including browser UI elements */
-  width: 100dvw;
+  /* width: 100vw; */
   background-color: #dfdff0;
   overflow-x: hidden;
 }
@@ -126,6 +126,7 @@ body {
   .story-img-mask {
     @apply absolute left-0 top-0 size-full overflow-hidden md:left-[20%] md:top-[-10%] md:size-4/5;
     clip-path: polygon(4% 0, 83% 21%, 100% 73%, 0% 100%);
+    /* clip-path: polygon(7% 25%, 79% 31%, 100% 72%, 0 100%); */
   }
 
   .story-img-content {
