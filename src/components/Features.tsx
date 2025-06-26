@@ -130,7 +130,7 @@ const BentoTilt = ({
   };
   return (
     <div
-      className={`${className}  will-change-transform `}
+      className={`${className}  will-change-transform transition-all duration-400`}
       ref={itemRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
